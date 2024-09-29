@@ -6,6 +6,7 @@
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
+  "description": "Your detailed app description here.",
   "icons": [
     {
       "src": "icons/icon-72x72.png",
@@ -54,6 +55,19 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "img/mobile-screenshot1.png",
+      "type": "image/png",
+      "sizes": "540x720"
+    },
+    {
+      "src": "img/desktop-screenshot1.png",
+      "type": "image/png",
+      "sizes": "2460x1674",
+      "form_factor": "wide"
     }
   ]
 }
