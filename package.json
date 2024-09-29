@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "^18.2.6",
     "@angular/router": "^18.2.6",
     "appwrite": "^14.0.1",
+    "dotenv": "^16.4.5",
     "ol": "^10.2.1",
     "openrouteservice-js": "^0.4.1",
     "rxjs": "~7.8.0",
