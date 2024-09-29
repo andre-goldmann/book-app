@@ -3,6 +3,7 @@ import { account, ID } from '../lib/appwrite';
 import {RouterOutlet} from "@angular/router";
 import {FormsModule} from "@angular/forms";
 import {MapComponent} from "./map/map.component";
+import {SwUpdate} from "@angular/service-worker";
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,14 @@ export class AppComponent {
   email: string = '';
   password: string = '';
   name: string = '';
+
+  constructor(private swUpdate: SwUpdate) {
+    this.swUpdate.versionUpdates.subscribe(event => {
+      if (confirm('New version available. Load New Version?')) {
+        window.location.reload();
+      }
+    });
+  }
 
   async login(email: string, password: string) {
     await account.createEmailPasswordSession(email, password);
