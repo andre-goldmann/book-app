@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /private/
+Allow: /public/
+Sitemap: https://book-app-eta.vercel.app/assets/sitemap.xml
+
+User-agent: Googlebot
+Disallow: /no-google/
+
+User-agent: Bingbot
+Disallow: /not-for-bing/
