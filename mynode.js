@@ -6,7 +6,9 @@ const checkSign = '\u{2705}';
 const envFile = `import { AppConfig } from '../app/app-config';
 export const environment: AppConfig = {
     apiUrl: ${process.env.apiUrl},
-    projectId: '${process.env.projectId}'
+    projectId: '${process.env.projectId}',
+    graphhopperApiKey: '${process.env.graphhopperApiKey}'
+
 };
 `;
 const targetPath = path.join(__dirname, './src/environments/environment.ts');
