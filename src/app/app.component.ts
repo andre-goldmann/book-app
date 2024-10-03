@@ -20,9 +20,9 @@ export class AppComponent {
 
   constructor(private swUpdate: SwUpdate) {
     this.swUpdate.versionUpdates.subscribe(event => {
-      if (confirm('New version available. Load New Version?')) {
-        window.location.reload();
-      }
+      //if (confirm('New version available. Load New Version?')) {
+        //window.location.reload();
+      //}
     });
   }
 
