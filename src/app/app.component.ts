@@ -33,7 +33,7 @@ export class AppComponent {
 
   async register(email: string, password: string, name: string) {
     await account.create(ID.unique(), email, password, name);
-    this.login(email, password);
+    await this.login(email, password);
   }
 
   async logout() {

@@ -3,6 +3,10 @@
     {{ loggedInUser ? 'Logged in as ' + loggedInUser.name : 'Not logged in' }}
   </p>
 
+    @if (loggedInUser){
+      <app-map></app-map>
+    }
+
   <div>
     <input type="email" placeholder="Email" [(ngModel)]="email" />
     <input type="password" placeholder="Password" [(ngModel)]="password" />
@@ -21,4 +25,4 @@
     </button>
   </div>
 </div>
-<app-map></app-map>
+
